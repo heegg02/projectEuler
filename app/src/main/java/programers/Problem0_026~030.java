@@ -71,29 +71,25 @@ class Solution {
 }
 
 import java.util.*;
-class Solution {
-  //수열과 구간쿼리3
-    public int[] solution(int[] arr, int[][] queries) {
-        int[] answer = {};
-        int[] result = new int[queries.length];
-        Arrays.fill(result, Integer.MAX_VALUE);
-        for(int i=0; I<querise.length; i++) {
-            if(int j=querise[i][0]; j<querise[i][1]; j++) {
-                if(result[i] > arr[j]) {
-                    result[i] = arr[j];
-                }
-            }if(result[i] == Integer.MAX_VALUE){
-                    result[i] = -1;
-                }
-        }
-//         int[] answer = new int[queries.length];
-//         for (int i=0; i<queries.length; i++) {
-//             for (int j=0; j<=queries[i][1]; j++) {
-//                 int[] k = new int[5];
-//                 System.out.print(arr[j]);
-//                 answer[i] = min; 
-//             }
-//         }
-        return answer;
-    }
-}
+		class Solution {
+            //수열과 구간 쿼리 2
+		    public int[] solution(int[] arr, int[][] queries) {
+		        int[] result = new int[queries.length];
+		        Arrays.fill(result, Integer.MAX_VALUE);
+		        for(int i=0; i<queries.length;i++){
+		           for(int j=queries[i][0]; j<queries[i][1];j++){
+		               if(queries[i][2] < arr[j]){
+		                  if(result[i] > arr[j]){
+		                      result[i] = arr[j];
+		                  }
+		               }if(result[i] == Integer.MAX_VALUE){
+		                   result[i] = -1;
+		               }
+		              
+		           }
+		    
+		        }
+		    
+		        return result;
+		    }
+		}
