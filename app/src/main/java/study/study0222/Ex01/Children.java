@@ -1,4 +1,4 @@
-package study.Ex01;
+package study.study0222.Ex01;
 
 public class Children extends Parent{
     //매개변수

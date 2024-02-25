@@ -1,4 +1,4 @@
-package study.Ex02;
+package study.study0222.Ex02;
 
 public class EmplMain {
     public static void main(String[] args) {

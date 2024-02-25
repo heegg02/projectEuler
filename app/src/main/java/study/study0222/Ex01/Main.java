@@ -1,4 +1,4 @@
-package study.Ex01;
+package study.study0222.Ex01;
 
 public class Main {
     public static void main(String[] args) {
