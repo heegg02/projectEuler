@@ -1,3 +1,8 @@
+=================================================
+*스톱워치 만들기*
+setInterval(), clearInterval(), innerText 사용~
+js04_function/js11_clock.html에 zeroFill 참고~
+=================================================
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -17,26 +22,12 @@
         let ms = 0;
         const stopWatch = document.getElementById('stopWatch');
         function start() {
-            clearInterval(timerStart);
-            timerStart = setInterval(() => {
-                ms++;
-                if(ms==100) {ss++; ms=0};
-                if(ss==60) {mm++; ss=0};
-
-                function zeroFill(num) {
-				return num < 10 ? '0'+ num : num;
-			    }
-
-                stopWatch.innerText = `${zeroFill(mm)}:${zeroFill(ss)}.${zeroFill(ms)}`;
-            }, 10);
         }
         
         function stop() {
-            clearInterval(timerStart);
         }
 
         function reset() {
-            stopWatch.innerText = '00:00.00';
         }
     </script>
 </body>
