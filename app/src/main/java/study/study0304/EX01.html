@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Challenge</title>
+    <script>
+        /* clearinterval 사용 */
+        // 'number'이라는 변수를 1로 초기화
+      	let number = 1;
+        
+    	// 'printNumber'라는 함수 정의
+      	function printNumber() {
+        	console.log("number = " + number);
+        	
+            // 'number'가 10에 도달하면 'intervalId'를 사용하여 간격을 지움
+        	if(number == 10) { clearInterval(start); }
+        }
+        
+        // 2000밀리초(2초) 간격으로 'printNumber' 함수를 호출하는 간격 설정
+        let start = setInterval(() => {printNumber(); number++;} , 2000);
+        
+    </script>
+</head>
+<body>
+    <!-- 이 예제에서는 본문이 비어 있음 -->
+</body>
+</html>
