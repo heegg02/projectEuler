@@ -1,4 +1,4 @@
-package study0305;
+package study.study0305;
 
 public class Person {
 	private String name;

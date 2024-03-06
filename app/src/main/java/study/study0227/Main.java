@@ -28,6 +28,6 @@ public class Main {
         System.out.println(product1.getmNum()+".\t"+product1.getmName()+"\t"+product1.getmWhere()+"\t"+product1.getmPrice());
         System.out.println(product2.getmNum()+".\t"+product2.getmName()+"\t"+product2.getmWhere()+"\t"+product2.getmPrice());
         System.out.println(product3.getmNum()+".\t"+product3.getmName()+"\t"+product3.getmWhere()+"\t"+product3.getmPrice());
-        System.out.println("출고 상품 : " + getCount() +"건);
+        System.out.println("출고 상품 : " + getCount() +"건");
     }
 }
